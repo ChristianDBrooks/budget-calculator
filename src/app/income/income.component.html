@@ -1,0 +1,21 @@
+<div class="header">
+    <h4>Income</h4>
+</div>
+<div class="container">
+    <div>
+        <h5 style="margin: 0;">Tax Filing Status:</h5>
+        <button id="single" class="third filingBtn selected" (click)="setTaxStatus($event)" data-filingType="single">Single</button>
+        <button id="joint" class="third filingBtn" (click)="setTaxStatus($event)" data-filingType="joint">Married - Filing Joint</button>
+        <button id="head" class="third filingBtn" (click)="setTaxStatus($event)" data-filingType="head">Head of Household</button>
+    </div>
+    <div>
+        <h5 style="margin: 10px 0 0 0;">Is this the yearly amount you make or the monthly amount?</h5>
+        <button id="yearly" class="half incrementBtn selected" (click)="setIncrement($event)">Yearly</button>
+        <button id="monthly" class="half incrementBtn" (click)="setIncrement($event)">Monthly</button>
+    </div>
+    <input type="number" [(ngModel)]="incomeInput" (input)="calcTaxPercentage()" placeholder="Enter income..">
+    <div class="bottom">
+        <div><strong>Federal Tax Rate:</strong> {{taxPercentage}}%</div>
+        <div><strong>Monthly Income After Tax:</strong> {{this.dataService.get('monthlyIncome') | currency}}</div>
+    </div>
+</div>

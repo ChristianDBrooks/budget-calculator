@@ -1,0 +1,15 @@
+<div class="header">
+    <h4>Expenses</h4>
+</div>
+<div class="container">
+    <button style="margin-bottom: 20px;" (click)='addInput()'>Add Expense</button>
+    <div id='expenses'>
+        <input
+            type="number"
+            *ngFor='let index of indexList'
+            [(ngModel)]="expenseList[index]"
+            (input)='calcExpenses()'>
+    </div>
+    
+    <div class="bottom" id="monthlyExpenses"><strong>Monthly Expenses:</strong> {{this.dataService.get('monthlyExpenses') | currency}}</div>
+</div>

@@ -1,0 +1,31 @@
+.half {
+    width: 50%;
+}
+
+.third {
+    width: 33.3%;
+}
+
+#yearly {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#monthly {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#single {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#joint {
+    border-radius: 0;
+}
+
+#head {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}

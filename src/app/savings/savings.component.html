@@ -1,0 +1,13 @@
+<div class="header">
+    <h4>Savings</h4>
+</div>
+<div class="container">
+        <div><strong>Monthly Income:</strong> {{this.dataService.get('monthlyIncome') | currency}}</div>
+        <div><strong>Monthly Expenses:</strong> {{this.dataService.get('monthlyExpenses') | currency}}</div>
+    <hr>
+    <div class="bottom">
+        <div><strong>Yearly Total: </strong>{{this.dataService.get('monthlySavings') * 12 | currency}}</div>
+        <div><strong>Monthly Total: </strong>{{this.dataService.get('monthlySavings') | currency}}</div>
+    </div>
+</div>
+    

@@ -1,0 +1,98 @@
+/* You can add global styles to this file, and also import other style files */
+/*
+ 00A6FB LIGHTEST
+ 0582CA
+ 006494
+ 003554
+ 051923 DARKEST
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap');
+
+html, body {
+    background: #051923;
+    color: rgb(227, 246, 255);
+    font-family: 'Raleway', sans-serif;
+}
+
+h4 {
+    font-size: 20px;
+    margin: 0; 
+}
+
+hr {
+    border-color: #00A6FB;
+}
+
+.container {
+    position: relative;
+    padding: 15px;
+    background-color: #006494;
+    min-height: 300px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.header {
+    padding: 10px 15px;
+    background-color: #0582CA;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom: #005279 solid 3px;
+}
+
+.column {
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+input[type="text"], input[type="number"] {
+    font-size: 16px;
+    color: white;
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom: #00A6FB solid 1px;
+    padding: 5px 0px;
+    margin: 5px 0;
+    width: 100%;
+    box-sizing:border-box
+}
+
+button {
+    color: white;
+    background-color: #0582CA;
+    border: #006494 solid 1px;
+    border-radius: 1000px;
+    padding: 8px 10px;
+    margin: 5px 0;
+    width: 100%;
+}
+
+button:active {
+    background-color: #00A6FB;
+}
+
+.selected {
+    background-color: #00A6FB;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.bottom {
+    position: absolute; 
+    bottom: 0;
+    /* padding: 8px 0; */
+    margin: 8px 0;
+}
